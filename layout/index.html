@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miftahul Falah</title>
+    <link rel="icon" type="image/x-icon" href="img/IMG-20220316-WA0012.jpg">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <h1>Miftahul Falah</h1>
+        <ul id="menuLink">
+            <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
+            <li><i class="fa-solid fa-address-card"></i><a href="#about">About</a></li>
+            <li><i class="fa-solid fa-user"></i><a href="#pengurus">Pengurus</a></li>
+            <li><i class="fa-solid fa-address-book"></i><a href="#contact">Contact</a></li>
+            <li id="tombolJadwal" ><i class="fa-solid fa-calendar-days"></i><a href="#jadual">Jadual Pengajian</a></li>
+            <li id="tombolJadwal" ><i class="fa-solid fa-calendar-days"></i><a href="login.php">Login</a></li>
+            <li id="tombolJadwal" ><i class="fa-solid fa-calendar-days"></i><a href="register.php">Daftar</a></li>
+            <li class="close" onclick="menuClick()"><i class="fa-solid fa-right-from-bracket"></i><a href="#close">Close</a></li>
+        </ul>
+        <i onclick="menuClick()" id="menu" class="fa-solid fa-bars"></i>
+    </nav>
+
+    <!-- Bagian Home -->
+    <main id="home">
+        <div class="nav-home">
+            <img src="img/IMG-20220316-WA0012.jpg" alt="">
+            <div data-aos="fade-right" class="content">
+                <h3>Selmat Datang Di #WEB</h3>
+                <h1>YAYASAN MIFTAHUL FALAH</h1>
+                <h2>AL-KAHIRI DESA PESENG</h2>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati doloremque, repellat corporis amet sit illum?</P>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </div>
+    </main>
+    <!-- Bagian Home -->
+
+    <!-- Jadual Pengajian -->
+    <div id="linkJadwal" class="jadual">
+        <h1>Jadwal Pengajian Mingguan Pada Bulan Maret 2024</h1>
+        <table>
+            <tr>
+                <th>Hari/Tgl</th>
+                <th>Jam</th>
+                <th>Pengisi Acara</th>
+            </tr>
+            <tr>
+                <td>Selasa/05/Maret/2024</td>
+                <td>10:30 WITA</td>
+                <td>TGH. L.Mil Saleh</td>
+            </tr>
+            <tr>
+                <td>Selasa/05/Maret/2024</td>
+                <td>10:30 WITA</td>
+                <td>TGH. L.Mil Saleh</td>
+            </tr>
+            <tr>
+                <td>Selasa/05/Maret/2024</td>
+                <td>10:30 WITA</td>
+                <td>TGH. L.Mil Saleh</td>
+            </tr>
+            <tr>
+                <td>Selasa/05/Maret/2024</td>
+                <td>10:30 WITA</td>
+                <td>TGH. L.Mil Saleh</td>
+            </tr>
+            <tr>
+                <td>Selasa/05/Maret/2024</td>
+                <td>10:30 WITA</td>
+                <td>TGH. L.Mil Saleh</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Jadual Pengajian -->
+
+    <!-- Bagian About -->
+    <main id="about">
+        <div class="nav-about">
+            <div data-aos="fade-up"class="content-1">
+                <img src="img/IMG_0061.JPG" alt="">
+            </div>
+            <div data-aos="fade-up"" class="content-2">
+                <h3>Kenapa Harus Ngaji Di Sini!!!</h3>
+                <h1>Yang Menyampaikan Ceramahnya Para Ulama Terbaik</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur laborum non praesentium quaerat ab ducimus quas minima ex reiciendis nisi.</p>
+            </div>
+        </div>
+    </main>
+    <!-- Bagian About -->
+
+    <!-- Bagian Pengurus -->
+    <main id="pengurus">
+        <div class="nav-pengurus">
+            <div data-aos="fade-up" class="content">
+                <i class="fa-solid fa-user"></i>
+                <h1>H.Suhaeri,S.Pd.I</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button onclick="clickDetail1(1)">Detail</button>
+            </div>
+                <!-- Bagian Detail -->
+                <div id="linkDetail" class="detail">
+                    <div class="dtl">
+                        <i class="fa-solid fa-user"></i>
+                        <h1>H.Suhaeri,S.Pd.I</h1>
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ad mollitia sequi sunt voluptatem, quidem dolore ab dolores? Ea, distinctio!</p>
+                        <br>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex assumenda iusto ipsum, enim facilis eligendi corporis at minus architecto consequatur placeat nisi possimus cumque quibusdam magnam nostrum? Quis, esse quo.</p>
+                    </div>
+                    <i id="close" onclick="clickDetail1(1)" class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <!-- Bagian Detail Akhir-->
+             <div data-aos="fade-up" class="content">
+                <i class="fa-solid fa-user"></i>
+                <h1>Suniman Khaeri</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button onclick="clickDetail2(2)">Detail</button>
+            </div>
+                <!-- Bagian Detail -->
+                <div id="linkDetaill" class="detail">
+                    <div class="dtl">
+                        <i class="fa-solid fa-user"></i>
+                        <h1>Suniman Khairi</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ad mollitia sequi sunt voluptatem, quidem dolore ab dolores? Ea, distinctio!</p>
+                        <br>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex assumenda iusto ipsum, enim facilis eligendi corporis at minus architecto consequatur placeat nisi possimus cumque quibusdam magnam nostrum? Quis, esse quo.</p>
+                    </div>
+                    <i id="close" onclick="clickDetail2(2)" class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <!-- Bagian Detail Akhir -->
+            <div data-aos="fade-up" class="content">
+                <i class="fa-solid fa-user"></i>
+                <h1>Refriandi Khaeri</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button onclick="clickDetail3(3)">Detail</button>
+            </div>
+                <!-- Bagian Detail -->
+                <div id="linkDetailll" class="detail">
+                    <div class="dtl">
+                        <i class="fa-solid fa-user"></i>
+                        <h1>Refriandi Khairi</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ad mollitia sequi sunt voluptatem, quidem dolore ab dolores? Ea, distinctio!</p>
+                        <br>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex assumenda iusto ipsum, enim facilis eligendi corporis at minus architecto consequatur placeat nisi possimus cumque quibusdam magnam nostrum? Quis, esse quo.</p>
+                    </div>
+                    <i id="close" onclick="clickDetail3(3)" class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <!-- Bagian Detail -->
+            <div data-aos="fade-up" class="content">
+                <i class="fa-solid fa-user"></i>
+                <h1>Ruhul Amin Khairi</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button onclick="clickDetail4(4)">Detail</button>
+            </div>
+                <!-- Bagian Detail -->
+                <div id="linkDetaillll" class="detail">
+                    <div class="dtl">
+                        <i class="fa-solid fa-user"></i>
+                        <h1>Ruhul Amin Khairi</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ad mollitia sequi sunt voluptatem, quidem dolore ab dolores? Ea, distinctio!</p>
+                        <br>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex assumenda iusto ipsum, enim facilis eligendi corporis at minus architecto consequatur placeat nisi possimus cumque quibusdam magnam nostrum? Quis, esse quo.</p>
+                    </div>
+                    <i id="close" onclick="clickDetail4(4)" class="fa-solid fa-circle-xmark"></i>
+                </div>
+            <!-- Bagian Detail -->
+        </div>
+    </main>
+    <!-- Bagian Pengurus -->
+
+    <!-- Bagian Contact -->
+    <main id="contact">
+        <div data-aos="zoom-in" class="nav-contact">
+            <div class="content-1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126243.43568894651!2d116.27666398906248!3d-8.585675055641957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdb5af21949331%3A0x41abce2484ca4dfe!2sSD%20Al-Ma&#39;arif%20NU%20Al-Khairi!5e0!3m2!1sid!2sid!4v1709473996208!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="content-2">
+                <div class="cal">
+                    <i class="fa-regular fa-envelope"><a href="mailto:lombooooook@gmail.com">Miftahulfalah@gmail.com</a></i>
+                    <i class="fa-brands fa-whatsapp"><a href="whatsapp://send?text=Assalamualaikum&phone=+6283129243281">083129243281</a></i>
+                    <i class="fa-brands fa-telegram"><a href="">Miftahulfalah</a></i>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Bagian Contact -->
+
+    <footer>
+        <p>&copy; 2024 Miftahul Falah. Hak Cipta Dilindungi</p>
+    </footer>
+
+    <script src="JS/main.js"></script>
+    <!-- Bagian Script AOS Aniamsi -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+         AOS.init();
+    </script>
+    <!-- Bagian Script AOS Aniamsi -->
+</body>
+</html>

@@ -1,0 +1,538 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    box-shadow: 0 0 6px #0f0f9cc4;
+    backdrop-filter: blur(5px);
+}
+
+nav h1 {
+    color: #0f0f9cc4;
+    font-family: serif;
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul .close {
+    display: none;
+}
+
+
+nav ul li {
+    list-style-type: none;
+    padding: 5px 10px;
+}
+
+nav ul li .fa-solid  {
+    display: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0f0f9cc4;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: #0f0f9cc4;
+}
+
+nav #menu {
+    display: none;
+}
+
+/* Bagian Home */
+
+main {
+    padding: 90px 0px 0px 0px;
+    width: 100%;
+}
+
+.nav-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-home img {
+    width: 220px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+}
+
+.nav-home .content {
+    text-align: center;
+}
+
+.nav-home .content i {
+    margin-top: 20px;
+    font-size: 25px;
+    width: 50px;
+    margin: 20px;
+    padding: 13px 0px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #0f0f9cc4;
+    transition: 0.9s ease-in-out;
+}
+
+.nav-home .content i:hover {
+    background-color: #0f0f9cc4;
+}
+
+
+.nav-home h3 {
+    font-family: cursive;
+}
+
+.nav-home h1 {
+    font-size: 60px;
+    color: #0f0f9cc4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-home h2 {
+    font-size: 40px;
+    color: #0f0f9cc4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Bagian Home */
+
+/* Jadual Pengajian */
+.jadual {
+    z-index: 999;
+    overflow: hidden;
+    position: fixed;
+    top:60px;
+    left: 280px;
+    right: 280px;
+    transition: 1s ease-in-out;
+}
+
+table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0f9cc4;
+    height: 500px;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 10px;
+}
+
+.jadual h1 {
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background: black;
+}
+
+th, tr, td {
+    padding: 20px 50px;
+    border: 1px solid #fff;
+    text-align: center;
+}
+/* Jadual Pengajian */
+
+/* Bagian About */
+.nav-about {
+    display: flex;
+    align-items: center;
+    margin: 65px;
+    gap: 20px;
+}
+
+.nav-about .content-1 {
+    flex: 1 1 30rem;
+}
+
+.nav-about .content-1 img {
+    width: 100%;
+}
+
+.nav-about .content-2 h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Bagian About */
+
+/* Bagian Pengurus */
+.nav-pengurus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    padding: 0px 70px;
+    gap: 70px;
+    margin-bottom: 0px;
+}
+
+.nav-pengurus .content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 0 6px #7c7c7cc4;
+    padding: 15px 20px;
+}
+
+.nav-pengurus .content:hover {
+    scale: 1.1;
+}
+
+.nav-pengurus .content i {
+    margin-bottom: 5px;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+.nav-pengurus .content h1 {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.nav-pengurus .content p {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.nav-pengurus .content button {
+    box-shadow: 0 0 4px #0f0f9cc4;
+    border: none;
+    padding: 5px 30px;
+    border-radius: 50px;
+}
+/* detail */
+.detail {
+    display: none;
+    color: #fff;
+    background: #0f0f9cc4;
+    box-shadow: 0 0 6px black;
+    backdrop-filter: blur(5px);
+    height: 400px;
+    position: relative;
+    position: fixed;
+    top: 150px;
+    left: 150px;
+    right: 150px;
+    z-index: 999;
+    animation: zoom 1s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.detail #close {
+    font-size: 25px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 150%;
+    background: black;
+    box-shadow: 0 0 6px black;
+}
+
+.detail #close:hover {
+    color: red;
+}
+
+.detail .dtl {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.detail .dtl h1 {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.detail .dtl i {
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.detail .dtl p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* detail */
+/* Bagian Pengurs */
+
+/* Bagian Contact */
+.nav-contact {
+    display: flex;
+    align-items: center;;
+    margin-bottom: 38px;
+    padding: 0px 65px;
+}
+
+.nav-contact .content-1 {
+    flex: 1 1 50rem;
+}
+
+.nav-contact .content-1 iframe {
+    width: 100%;
+    height: 210px;
+    border: none;
+}
+
+.nav-contact .content-2 {
+    flex: 1 1 10rem;
+    background-color: #0f0f9cc4;
+    padding: 0px 30px;
+}
+
+.nav-contact .content-2 .cal {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-contact .content-2 .cal i {
+    position: relative;
+    font-size: 30px;
+    line-height: 71px;
+    color: #fff;
+}
+
+.nav-contact .content-2 .cal i a {
+    font-size: 15px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    padding: 0px 10px;
+    position: absolute;
+    top: 1px;
+}
+
+/* Bagian Contact */
+
+/* Bagian Footer */
+footer {
+    background-color: #0f0f9cc4;
+    backdrop-filter: blur(6px);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 15px;
+}
+/* Bagian Footer */
+
+@media (max-width:768px) {
+    nav #menu {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav {
+        backdrop-filter: none;
+        background: #fff;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        right: 0;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 4px #0f0f9cc4;
+        width: 100%;
+        height: 280px;
+        animation: height 0.1s ease-in-out;
+    }
+
+    @keyframes height {
+        from {
+            height: 0px;
+        }
+
+        to {
+            height: 280px;
+        }
+    }
+
+    nav ul .close {
+        display: block;
+    }
+
+    nav ul li .fa-solid {
+        display: block;
+    }
+
+    nav ul li{
+        position: relative;
+    }
+
+    nav ul li i {
+        margin-top: 15px;
+        margin-left: 10px;
+        font-size: 20px;
+        color: #0f0f9cc4;
+    }
+
+    nav ul li a {
+        position: absolute;
+        left: 55px;
+        top: 15px;
+    }
+
+    nav ul li a:hover {
+        background: none;
+        margin-left: 10px;
+    }
+
+    main {
+        padding: 40px 5px 40px 5px;
+        height: auto;
+    }
+
+    /* Bagian Home */
+    .nav-home {
+        margin-top: 70px;
+    }
+
+    .nav-home .content h3 {
+        font-size: 13px;
+    }
+
+    .nav-home .content h1 {
+        font-size: 30px;
+    }
+
+    .nav-home .content h2 {
+        font-size: 20px;
+    }
+
+    /* Bagian Jadual Pengajian */
+    .jadual {
+        top: 240px;
+        left: 1px;
+        right: 1px;
+    }
+
+    table {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0f0f9cc4;
+        height: auto;
+        backdrop-filter: blur(10px);
+        color: #fff;
+        padding: 5px 0px;
+    }
+
+    th, tr, td {
+        padding: 15px 5px;
+        border: 1px solid #fff;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /* Bagian Pengurus */
+    .nav-pengurus {
+        gap: 30px;
+    }
+
+    .nav-pengurus, .nav-about {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    /* Bagian About */
+    .nav-about {
+        margin: 20px;
+    }
+
+    .nav-about .content-1 {
+        flex: none;
+    }
+
+    .nav-about .content-1 {
+        flex: none;
+    }
+
+    .nav-about .content-2 h1 {
+        color: #0f0f9cc4;
+        font-size: 30px;
+    }
+
+    /* Bagian Detail */
+    .detail {
+        left: 10px;
+        right: 10px;
+    }
+
+    /* Bagian Contact */
+    .nav-contact {
+        flex-wrap: wrap;
+        padding: 0px 20px;
+    }
+
+    .nav-contact .content-2 {
+        padding: 10px 0px;
+    }
+
+    .nav-contact .content-2 .cal {
+        margin-top: -5px;
+        flex-direction: row;
+    }
+
+    .nav-contact .content-2 .cal i {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .nav-contact .content-2 .cal i a {
+        position: relative;
+        font-size: 10px;
+    }
+}
